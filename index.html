@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palatte Generator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <h1>Palette Generator</h1>
+        <h2>Generate color palettes for quick use or test your own.</h2>
+
+        <div class="color-container">
+            <div class="color">
+                <p>Base</p>
+                <input type="color" value="#1e1e1e">
+                <input type="text" value="#1e1e1e" color-var="--base-clr"> 
+            </div>
+            <div class="color">
+                <p>Section</p>
+                <input type="color" value="#2a2a2a">
+                <input type="text" value="#2a2a2a" color-var="--section-clr">
+            </div>
+            <div class="color">
+                <p>Text</p>
+                <input type="color" value="#ffffff">
+                <input type="text" value="#ffffff" color-var="--text-clr">
+            </div>
+            <div class="color">
+                <p>Secondary Text</p>
+                <input type="color" value="#b0b0b0">
+                <input type="text" value="#b0b0b0" color-var="--secondary-text-clr">
+            </div>
+            <div class="color">
+                <p>Accent</p>
+                <input type="color" value="#4aa3df">
+                <input type="text" value="#4aa3df" color-var="--accent-clr">
+            </div>
+            <div class="color">
+                <p>Line</p>
+                <input type="color" value="#474747">
+                <input type="text" value="#474747" color-var="--line-clr">
+            </div>
+            <div class="color">
+                <p>Hover</p>
+                <input type="color" value="#333333">
+                <input type="text" value="#333333" color-var="--hover-clr">
+            </div>
+            <div class="color">
+                <p>Shadow</p>
+                <input type="color" value="#d0d0d0">
+                <input type="text" value="#d0d0d0" color-var="--shadow-clr">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button id="generateBtn">Generate</button>
+                </li>
+                <li>
+                    <button>Random</button>
+                </li>
+                <li>
+                    <button onclick="javascript:void(0); location.reload();">Reset</button>
+                </li>
+                <li>
+                    <button id="copyBtn">Copy</button>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="img/this-guy.jpg" alt="Logo">
+        <p>GoMYOR</p>
+    </footer>
+
+</body>
+
+</html>
